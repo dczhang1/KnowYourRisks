@@ -4,76 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team | Know Your Risks</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
- <header>
-    <div class="branding">
-        <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
-        <h1 class="project-title">Know Your Risks</h1>
-    </div>
-    <nav aria-label="Main Navigation">
-        <a href="index.html">Home</a>
-        <a href="questionnaire.html">Take our Questionnaire</a>
-        <a href="research.html">Research</a>
-        <a href="team.html">Team</a>
-        <a href="involve.html">Get Involved</a>
-    </nav>
-</header>
+    <div class="main-container">
+        <header>
+            <div class="nav-container">
+                <div class="branding">
+                    <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
+                    <span class="project-title">Know Your Risks</span>
+                </div>
+                <nav>
+                            <div class="nav-links">
+                                <a href="index.html">Home</a>
+                                <a href="research.html">Research</a>
+                                <a href="team.html" aria-current="page">Team</a>
+                                <a href="involve.html">Get Involved</a>
+                            </div>
+                    <a href="questionnaire.html" class="assessment-button">Take our Assessments</a>
+                </nav>
+            </div>
+        </header>
 
         <main class="team-page">
-            <section class="page-header">
-                <h2>Our Research Team</h2>
-                <p>Dedicated experts driving innovative research in workplace risk assessment</p>
-            </section>
 
-            <section class="team-members">
-                <div class="team-member-card">
-                    <div class="member-info">
-                        <h3>Dr. Sarah Chen</h3>
-                        <h4>Principal Investigator</h4>
-                        <p>Expert in organizational psychology and risk behavior analysis with over 15 years of research experience in workplace dynamics and strategic risk management. Her work focuses on understanding the cognitive and environmental factors that influence risk perception and decision-making in professional settings.</p>
-                        <div class="member-links">
-                            <a href="#" class="link-publication">Publications</a>
-                            <a href="#" class="link-contact">Contact</a>
+
+            <section class="principal-investigator">
+    <h2>Principal Investigator</h2>
+    <div class="pi-profile">
+        <img src="assets/donzhang.png" alt="Dr. Don Zhang">
+        <div class="pi-details">
+            <h2>Don C. Zhang, PhD</h2>
+            <h3>Associate Professor</h3>
+            <p>Expert in organizational psychology and risk behavior analysis with over 15 years of research experience in workplace dynamics and strategic risk management. Her work focuses on understanding the cognitive and environmental factors that influence risk perception and decision-making in professional settings.</p>
+            <div class="social-links">
+                <!-- Email -->
+                <a href="mailto:zhang1@lsu.edu" class="social-link" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+                
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.com/citations?user=GTukwAEAAAAJ&hl=en" class="social-link" title="Google Scholar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                </a>
+                
+                <!-- ResearchGate -->
+                <a href="https://www.researchgate.net/profile/Don-Zhang?ev=hdr_xprf" class="social-link" title="Research Gate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 18h8"/>
+                        <path d="M3 22h18"/>
+                        <path d="M14 22a7 7 0 1 0 0-14h-1"/>
+                        <path d="M9 14h2"/>
+                        <path d="M9 12a2 2 0 0 1 2-2h1.5"/>
+                        <path d="M9 16a2 2 0 0 0 2 2h1.5"/>
+                    </svg>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/zdon89/" class="social-link" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect width="4" height="12" x="2" y="9"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+                
+                <!-- University Profile -->
+                <a href="https://www.lsu.edu/hss/psychology/faculty/industrial/zhang.php" class="social-link" title="University Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                        <path d="M9 22v-4h6v4"/>
+                        <path d="M8 6h.01"/>
+                        <path d="M16 6h.01"/>
+                        <path d="M12 6h.01"/>
+                        <path d="M12 10h.01"/>
+                        <path d="M12 14h.01"/>
+                        <path d="M16 10h.01"/>
+                        <path d="M16 14h.01"/>
+                        <path d="M8 10h.01"/>
+                        <path d="M8 14h.01"/>
+                    </svg>
+                </a>
+                
+                <!-- Personal Website -->
+                <a href="https://www.donczhang.com/" class="social-link" title="Personal Website">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="lab-members">
+                <h2>Lab Members</h2>
+                <div class="lab-members-grid">
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Dr. Michael Rodriguez</h2>
+                                <h3>Senior Research Scientist</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Dr. Michael Rodriguez</h2>
+                                <h3>Senior Research Scientist</h3>
+                                <p>Specializes in quantitative research methodologies and advanced data analysis techniques in organizational risk assessment. With expertise in predictive modeling and statistical analysis, he develops innovative approaches to understanding complex risk-taking behaviors in various professional environments.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="team-member-card">
-                    <div class="member-info">
-                        <h3>Dr. Michael Rodriguez</h3>
-                        <h4>Senior Research Scientist</h4>
-                        <p>Specializes in quantitative research methodologies and advanced data analysis techniques in organizational risk assessment. With expertise in predictive modeling and statistical analysis, he develops innovative approaches to understanding complex risk-taking behaviors in various professional environments.</p>
-                        <div class="member-links">
-                            <a href="#" class="link-publication">Publications</a>
-                            <a href="#" class="link-contact">Contact</a>
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Dr. Emily Thompson</h2>
+                                <h3>Statistical Analyst</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Dr. Emily Thompson</h2>
+                                <h3>Statistical Analyst</h3>
+                                <p>Advanced expertise in statistical modeling, data visualization, and risk assessment techniques. She brings sophisticated analytical skills to unraveling complex patterns in workplace risk-taking behaviors, providing critical insights through rigorous statistical methodologies.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="team-member-card">
-                    <div class="member-info">
-                        <h3>Dr. Emily Thompson</h3>
-                        <h4>Statistical Analyst</h4>
-                        <p>Advanced expertise in statistical modeling, data visualization, and risk assessment techniques with a focus on predictive analytics. She brings sophisticated analytical skills to unraveling complex patterns in workplace risk-taking behaviors, providing critical insights through rigorous statistical methodologies.</p>
-                        <div class="member-links">
-                            <a href="#" class="link-publication">Publications</a>
-                            <a href="#" class="link-contact">Contact</a>
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Alex Johnson</h2>
+                                <h3>Research Associate</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Alex Johnson</h2>
+                                <h3>Research Associate</h3>
+                                <p>Supports ongoing research projects with data collection, analysis, and administrative coordination. Brings a detail-oriented approach to managing complex research workflows and supporting the team's investigative efforts.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                                <p>We are currently seeking talented researchers to join our dynamic team. If you are passionate about understanding workplace risk-taking behaviors, we want to hear from you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                                <p>Exciting opportunity for a dedicated researcher to contribute to groundbreaking work in organizational psychology and risk assessment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                                <p>Join our research team and help us explore the intricate dynamics of workplace risk-taking. Collaborative environment with cutting-edge research opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                                <p>We are expanding our research capabilities and seeking innovative minds to join our team. Bring your expertise and passion for understanding workplace dynamics.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                            </div>
+                            <div class="team-card-back">
+                                <h2>Research Position</h2>
+                                <h3>Open</h3>
+                                <p>Opportunity to work on interdisciplinary research at the intersection of psychology, organizational behavior, and risk assessment.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="collaborators">
-                <h2>Our Collaborators</h2>
-                <div class="collaborator-list">
-                    <div class="collaborator">Jane Smith, Google Inc</div>
-                    <div class="collaborator">Dr. John Davis, Stanford University</div>
-                    <div class="collaborator">Michael Wong, Amazon Research</div>
-                    <div class="collaborator">Dr. Elena Rodriguez, MIT Sloan School of Management</div>
+                <h2>Global Collaborators</h2>
+                <div class="collaborators-grid">
+                    <div class="collaborator-card">
+                        <h3>Jane Smith</h3>
+                        <p>Director of Research, Google Inc</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Dr. John Davis</h3>
+                        <p>Professor, Stanford University</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Michael Wong</h3>
+                        <p>Research Lead, Amazon Research</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Dr. Elena Rodriguez</h3>
+                        <p>Associate Director, MIT Sloan School of Management</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Dr. David Kim</h3>
+                        <p>Head of Innovation, Samsung Research</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Sarah Martinez</h3>
+                        <p>Chief Data Scientist, Salesforce</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Prof. Robert Lee</h3>
+                        <p>Director, Harvard Business Research</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Dr. Aisha Patel</h3>
+                        <p>Research Director, Apple Inc</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Mark Thompson</h3>
+                        <p>Innovation Lead, Microsoft Research</p>
+                    </div>
+                    <div class="collaborator-card">
+                        <h3>Dr. Laura Chen</h3>
+                        <p>Research Coordinator, Cisco Systems</p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -86,10 +278,5 @@
             </div>
         </footer>
     </div>
-
-       <script src="main.js"></script>
-    <script>
-        document.body.classList.remove('fade-out');
-    </script>
 </body>
 </html>

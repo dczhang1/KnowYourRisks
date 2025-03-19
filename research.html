@@ -4,52 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Know Your Risks</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-       <header>
-    <div class="branding">
-        <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
-        <h1 class="project-title">Know Your Risks</h1>
-    </div>
-    <nav aria-label="Main Navigation">
-        <a href="index.html">Home</a>
-        <a href="questionnaire.html">Take our Questionnaire</a>
-        <a href="research.html">Research</a>
-        <a href="team.html">Team</a>
-        <a href="involve.html">Get Involved</a>
-    </nav>
-</header>
-
-        <main class="research-page">
-            <section class="page-header">
-                <h2>Our Research Methodology</h2>
-                <p>Comprehensive approach to understanding risk-taking behaviors in professional environments</p>
-            </section>
-
-            <section class="research-overview">
-                <div class="research-card">
-                    <h3>Research Objectives</h3>
-                    <p>Our study aims to systematically analyze risk-taking behaviors across various professional sectors. By employing mixed-method research techniques, we investigate the psychological, organizational, and contextual factors that influence risk perception and decision-making in workplace settings.</p>
+    <div class="main-container">
+        <header>
+            <!-- Existing header content remains the same -->
+            <div class="nav-container">
+                <div class="branding">
+                    <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
+                    <span class="project-title">Know Your Risks</span>
                 </div>
+                <nav>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="research.html" aria-current="page">Research</a>
+                        <a href="team.html">Team</a>
+                        <a href="involve.html">Get Involved</a>
+                    </div>
+                    <a href="questionnaire.html" class="assessment-button">Take our Assessments</a>
+                </nav>
+            </div>
+        </header>
 
-                <div class="research-card">
-                    <h3>Key Focus Areas</h3>
+        <main>
+            <div class="research-content">
+                <!-- Updated floating nav with new sections -->
+                <nav class="floating-nav">
                     <ul>
-                        <li>Cognitive processes underlying risk assessment</li>
-                        <li>Organizational culture and risk tolerance</li>
-                        <li>Individual differences in risk perception</li>
-                        <li>Impact of workplace environment on risk behaviors</li>
+                        <li><a href="#overview" class="nav-link">Overview</a></li>
+                        <li><a href="#factors" class="nav-link">Research Factors</a></li>
+                        <li><a href="#methodology" class="nav-link">Research Approach</a></li>
+                        <li><a href="#current-projects" class="nav-link">Current Projects</a></li>
+                        <li><a href="#publications" class="nav-link">Publications</a></li>
+                        <li><a href="#presentations" class="nav-link">Presentations</a></li>
+                        <li><a href="#impact" class="nav-link">Research Impact</a></li>
+                        <li><a href="#future" class="nav-link">Future Directions</a></li>
                     </ul>
-                </div>
+                </nav>
 
-                <div class="research-card">
-                    <h3>Methodology</h3>
-                    <p>Our research combines quantitative surveys, in-depth interviews, and behavioral experiments. We utilize advanced statistical analysis and machine learning techniques to uncover nuanced patterns in risk-taking behaviors across different professional contexts.</p>
+                <div class="research-sections">
+                    <!-- Overview Section -->
+                    <section id="overview" class="research-section">
+                        <h2>Research Overview</h2>
+                        <p>Our research investigates the complex dynamics of workplace risk-taking behavior, examining how individual, organizational, and environmental factors interact to influence decision-making in professional settings.</p>
+                    </section>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Existing Factors Section -->
+                    <section id="factors" class="research-section">
+                        <div class="research-flow">
+                            <!-- Your existing research-factors content remains the same -->
+                            <div class="research-factors">
+                                <div class="factor-card">
+                                    <h2>Personality & Preferences</h2>
+                                    <p>Individual differences in risk tolerance and decision-making styles across different domains</p>
+                                </div>
+                                <div class="factor-card">
+                                    <h2>Organizational Context</h2>
+                                    <p>Company culture, policies, and leadership approaches that shape risk-taking behavior</p>
+                                </div>
+                                <div class="factor-card">
+                                    <h2>Situational Factors</h2>
+                                    <p>Environmental conditions and specific circumstances that influence risk decisions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flow-lines">
+                                <svg width="100%" height="100" viewBox="0 0 800 100">
+                                    <path d="M 200,20 L 400,80" class="flow-line" />
+                                    <path d="M 400,20 L 400,80" class="flow-line" />
+                                    <path d="M 600,20 L 400,80" class="flow-line" />
+                                </svg>
+                            </div>
+
+                            <div class="central-concept">
+                                <div class="concept-card">
+                                    <h2>Risk Taking at Work</h2>
+                                    <p>A comprehensive model of workplace risk behavior</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Existing Methodology Section -->
+                    <section id="methodology" class="research-section">
+                        <!-- Your existing methodology content remains the same -->
+                        <div class="methodology">
+                            <h2>Our Research Approach</h2>
+                            <p>Through a multi-method approach, we examine how these factors interact to influence risk-taking behavior in professional settings:</p>
+                            <div class="methodology-grid">
+                                <div class="method-card">
+                                    <h3>Quantitative Surveys</h3>
+                                    <p>Large-scale data collection across industries</p>
+                                </div>
+                                <div class="method-card">
+                                    <h3>Behavioral Experiments</h3>
+                                    <p>Controlled studies of decision-making</p>
+                                </div>
+                                <div class="method-card">
+                                    <h3>Field Observations</h3>
+                                    <p>Real-world analysis of risk behaviors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Current Projects Section -->
+                            <section id="current-projects" class="research-section">
+                                <h2>Current Projects</h2>
+                                <div class="projects-grid">
+                                    <div class="project-card">
+                                        <h3>Workplace Risky Choice Inventory Development</h3>
+                                        <p>Bottom-up approach to generating and analyzing risky choices at work, developing a comprehensive 69-item inventory</p>
+                                    </div>
+                                    <div class="project-card">
+                                        <h3>Calculated and Spontaneous Risk-Taking Scale (CASPRT)</h3>
+                                        <p>Development and validation of a dual-process approach to understanding risk-taking styles across seven studies</p>
+                                    </div>
+                                    <div class="project-card">
+                                        <h3>Risk Preference and Well-Being Meta-Analysis</h3>
+                                        <p>Examining the relationship between risk preference and subjective and psychological well-being</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Publications Section -->
+                        <section id="publications" class="research-section">
+                            <h2>Publications</h2>
+                            <div class="publications-list">
+                                <div class="publication-item">
+                                    <h3>2024</h3>
+                                    <div class="publication-entry">
+                                        <p class="publication-title">"The Bright, Dark, and Gray Sides of Risk Takers at Work: Criterion Validity of Risk Propensity for Contextual Work Performance"</p>
+                                        <p class="publication-authors">Zhang, D.C., Barratt, C.L., & Smith, R.W.</p>
+                                        <p class="publication-journal">Journal of Business and Psychology</p>
+                                    </div>
+                                    <div class="publication-entry">
+                                        <p class="publication-title">"Development and Validation of the General Risk Propensity Scale (GRiPS)"</p>
+                                        <p class="publication-authors">Zhang, D.C., Highhouse, S., & Nye, C.D.</p>
+                                        <p class="publication-journal">Journal of Behavioral Decision Making</p>
+                                    </div>
+                                    <div class="publication-entry">
+                                        <p class="publication-title">"Eliciting Risk Preferences: Is a Single Item Enough?"</p>
+                                        <p class="publication-authors">Zhang, D.C., Howard, G., Matthews, R.A., & Cowley, T.</p>
+                                        <p class="publication-journal">Journal of Risk Research</p>
+                                    </div>
+                                        <div class="publication-entry">
+                                        <p class="publication-title">"Is risk propensity unique from the Big Five factors of personality? A meta-analytic investigation"</p>
+                                        <p class="publication-authors">Highhouse, S., Wang, Y., & Zhang, D.C.</p>
+                                        <p class="publication-journal">Journal of Research in Personality</p>
+                                    </div>
+                                                                </div>
+                                <div class="publication-item">
+                                    <h3>2023</h3>
+                                    <div class="publication-entry">
+                                        <p class="publication-title">"Meta-Analysis of Risk Preference at Work"</p>
+                                        <p class="publication-authors">Zhang, D.C., et al.</p>
+                                        <p class="publication-journal">Under revision at Journal of Business and Psychology</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    <div class="section-divider"></div>
+
+                    <!-- New Presentations Section -->
+                    <section id="presentations" class="research-section">
+                        <h2>Presentations</h2>
+                        <div class="presentations-list">
+                            <div class="presentation-item">
+                                <h3>Conference Presentations</h3>
+                                <ul>
+                                    <li>
+                                        <p class="presentation-title">Society for Industrial and Organizational Psychology (SIOP) Annual Conference 2024</p>
+                                        <p class="presentation-details">"New Frontiers in Workplace Risk Assessment"</p>
+                                    </li>
+                                    <li>
+                                        <p class="presentation-title">Risk Management Society (RIMS) Conference 2024</p>
+                                        <p class="presentation-details">"Implementing Risk Assessment Tools in Organizations"</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="presentation-item">
+                                <h3>Invited Talks</h3>
+                                <ul>
+                                    <li>
+                                        <p class="presentation-title">Stanford Business School</p>
+                                        <p class="presentation-details">"Risk-Taking in Modern Organizations"</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Research Impact Section -->
+                    <section id="impact" class="research-section">
+                        <h2>Research Impact</h2>
+                        <p>Our research has contributed to the understanding of workplace risk behavior and has influenced organizational policies across multiple industries.</p>
+                        <div class="impact-stats">
+                            <div class="impact-stat">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">Organizations Implementing Our Framework</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Professional Risk Assessments Conducted</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="section-divider"></div>
+
+                    
+                        <!-- Future Directions Section -->
+                        <section id="future" class="research-section">
+                            <h2>Future Directions</h2>
+                            <p>Our upcoming research initiatives focus on advancing our understanding of workplace risk-taking behavior through innovative methodological approaches and theoretical explorations.</p>
+                            <div class="future-directions-grid">
+                                <div class="direction-card">
+                                    <h3>Construct Validity of Risk Propensity</h3>
+                                    <p>Conducting validation studies on the "general risk factor" and exploring construct validity of specific risk-taking factors</p>
+                                </div>
+                                <div class="direction-card">
+                                    <h3>Measurement Methodologies</h3>
+                                    <p>Investigating differences between "revealed" and "stated" measures of risk preference, exploring their psychological constructs</p>
+                                </div>
+                                <div class="direction-card">
+                                    <h3>Cognitive Processes in Risk Taking</h3>
+                                    <p>Exploring the relationship between risk preference and cognitive abilities, examining psychological mechanisms underlying risky choices</p>
+                                </div>
+                                <div class="direction-card">
+                                    <h3>Positive vs Negative Risk Taking</h3>
+                                    <p>Developing theoretical frameworks to distinguish between constructive and destructive risk-taking behaviors in organizational contexts</p>
+                                </div>
+                            </div>
+                        </section>
+
                 </div>
-            </section>
+            </div>
         </main>
 
         <footer>
@@ -61,9 +265,6 @@
         </footer>
     </div>
 
-    <script src="main.js"></script>
-    <script>
-        document.body.classList.remove('fade-out');
-    </script>
+    <script src="research-nav.js"></script>
 </body>
 </html>

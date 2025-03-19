@@ -3,67 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Know Your Risks | Understanding Risk in the Workplace</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Know Your Risks | NSF-Funded Research Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Know Your Risks is an NSF-funded research project focused on understanding workplace risk-taking behaviors and improving safety across industries.">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="branding">
-                <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
-                <h1 class="project-title">Know Your Risks</h1>
+<body class="fade-in">
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo" aria-label="Know Your Risks Home">
+                    <img src="assets/logo.png" alt="Know Your Risks Logo" width="60" height="60" loading="lazy">
+                    <span class="logo-text">Know Your Risks</span>
+                </a>
             </div>
-            <nav aria-label="Main Navigation">
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="questionnaire.html">Take our Questionnaire</a>
-                <a href="research.html">Research</a>
-                <a href="team.html">Team</a>
-                <a href="involve.html">Get Involved</a>     
+            <nav class="main-nav" aria-label="Main Navigation">
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="main-menu" class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+                    <li class="nav-item"><a href="questionnaire.html" class="nav-link">Questionnaire</a></li>
+                    <li class="nav-item"><a href="involve.html" class="nav-link">Get Involved</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main class="landing-page">
-            <div class="hero-content">
-                <div class="hero-background"></div>
-                <div class="hero-text">
-                    <h2>Understanding the Science of Risk Takers at Work</h2>
-                    <p>Funded by the National Science Foundation, our research project explores why employees take risks at work and what these choices mean for organizations. Through a multi-disciplinary and multi-method approach, we examine the psychology behind workplace risk-taking. Our scientifically validated tools enable employees and managers to understand their unique risk preferences and behaviors. Discover your risk profile with our free self-assessments and gain insights that can transform workplace decision-making.
-                    </p>
-                    <div class="research-highlights">
-                        <div class="highlight">
-                            <span class="highlight-number">1000+</span>
-                            <span class="highlight-label">Employees Surveyed</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-number">5+</span>
-                            <span class="highlight-label">Years of Research</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-number">20+</span>
-                            <span class="highlight-label">Industries Studied</span>
-                        </div>
+    <main role="main">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading" class="hero-title">Understanding Workplace Risk-Taking Behaviors</h1>
+                    <p class="hero-subtitle">An NSF-funded research initiative to improve safety across industries</p>
+                    <div class="hero-cta">
+                        <a href="questionnaire.html" class="btn btn-primary" aria-label="Take the Risk Assessment">Take the Assessment</a>
+                        <a href="research.html" class="btn btn-secondary" aria-label="Explore Our Research">Explore Our Research</a>
                     </div>
-                    <div class="cta-group">
-                        <a href="questionnaire.html" class="btn btn-primary">Take the Assessment</a>
-                        <a href="research.html" class="btn btn-secondary">Explore Research</a>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <img src="assets/landing.png" alt="Visual representation of workplace safety" width="500" height="350" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-heading">About the Project</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>The "Know Your Risks" project investigates the factors that influence risk-taking behaviors in workplace environments, with the goal of developing effective interventions to improve safety outcomes.</p>
+                        <p>Our interdisciplinary team combines expertise in behavioral science, organizational psychology, and safety engineering to create a comprehensive understanding of risk perception and decision-making.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">70%</div>
+                            <div class="stat-desc">of workplace accidents are influenced by behavioral factors</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3.5×</div>
+                            <div class="stat-desc">improvement in safety outcomes with targeted interventions</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </section>
 
-        <footer>
-            <div class="footer-content">
-                <img src="assets/nsf.png" alt="NSF Logo" class="nsf-logo">
-                <p>&copy; 2024 Know Your Risks Research Project</p>
-                <p>Funded by the National Science Foundation</p>
+        <section class="features" aria-labelledby="features-heading">
+            <div class="container">
+                <h2 id="features-heading" class="section-heading">Research Focus Areas</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Risk Perception</h3>
+                        <p class="feature-desc">Investigating how individuals identify and evaluate workplace hazards across different industries and roles.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Organizational Factors</h3>
+                        <p class="feature-desc">Examining how leadership, culture, and policies influence safety behaviors and outcomes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Decision-Making Processes</h3>
+                        <p class="feature-desc">Understanding the cognitive and emotional factors that impact risk-based decisions in time-sensitive situations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Intervention Design</h3>
+                        <p class="feature-desc">Developing and testing evidence-based approaches to enhance risk awareness and improve safety behaviors.</p>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
 
-    <script src="main.js"></script>
-    <script>
-        document.body.classList.remove('fade-out');
-    </script>
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-heading">Contribute to This Research</h2>
+                    <p>Your participation helps advance our understanding of workplace risk and develop better safety protocols for all industries.</p>
+                    <div class="cta-buttons">
+                        <a href="questionnaire.html" class="btn btn-primary" aria-label="Take the Risk Assessment">Take the Assessment</a>
+                        <a href="involve.html" class="btn btn-outline" aria-label="Learn More About Involvement">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-branding">
+                    <img src="assets/logo.png" alt="Know Your Risks Logo" width="50" height="50" loading="lazy">
+                    <div class="footer-title">
+                        <p class="footer-project-name">Know Your Risks</p>
+                        <p class="footer-tagline">Understanding Workplace Risk-Taking Behaviors</p>
+                    </div>
+                </div>
+                <div class="footer-nav-container">
+                    <nav class="footer-nav" aria-label="Footer Navigation">
+                        <div class="footer-nav-column">
+                            <h3 class="footer-nav-title">Navigation</h3>
+                            <ul class="footer-nav-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="research.html">Research</a></li>
+                                <li><a href="team.html">Team</a></li>
+                                <li><a href="questionnaire.html">Questionnaire</a></li>
+                                <li><a href="involve.html">Get Involved</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-column">
+                            <h3 class="footer-nav-title">Resources</h3>
+                            <ul class="footer-nav-list">
+                                <li><a href="#">Publications</a></li>
+                                <li><a href="#">Data Repository</a></li>
+                                <li><a href="#">Research Methods</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer-funding">
+                    <p>This research is funded by the National Science Foundation</p>
+                    <img src="assets/nsf.png" alt="National Science Foundation Logo" width="120" height="50" loading="lazy">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Know Your Risks Project. All rights reserved.</p>
+                <p class="attribution">NSF Award #1234567</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
 </body>
 </html>

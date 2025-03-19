@@ -1,589 +1,160 @@
-/* Landing Page Specific Styles */
-.landing-page {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 200px);
-    overflow: hidden;
+:root {
+    --color-primary: #4A148C;
+    --color-secondary: #E0E0E0;
+    --color-text: #333333;
+    --color-background: #FFFFFF;
 }
 
-.hero-content {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    padding: var(--spacing-lg);
-    z-index: 2;
+/* Base Typography - Add this to the top of styles.css after :root */
+:root {
+    --color-primary: #4A148C;
+    --color-secondary: #E0E0E0;
+    --color-text: #333333;
+    --color-background: #FFFFFF;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
 }
 
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(44, 123, 229, 0.05) 0%, rgba(44, 123, 229, 0.1) 100%);
-    background-size: cover;
-    background-position: center;
-    transform: scale(1.1);
-    filter: blur(10px);
-    z-index: 1;
+/* Global Typography */
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
 }
 
-.hero-text {
-    position: relative;
-    text-align: center;
-    z-index: 3;
-}
-
-.hero-text h2 {
-    font-size: 3rem;
+/* Headings Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
     color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
     line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
-.hero-text p {
-    font-size: 1.25rem;
-    color: var(--color-text-light);
-    max-width: 700px;
-    margin: 0 auto var(--spacing-lg);
-    line-height: 1.6;
-}
-
-.research-highlights {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-lg);
-}
-
-.highlight {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: var(--spacing-md);
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.highlight-number {
-    font-size: 2.5rem;
+h1 {
+    font-size: 3.0rem;
     font-weight: 700;
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-sm);
 }
 
-.highlight-label {
-    font-size: 0.9rem;
-    color: var(--color-text-light);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.cta-group {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-md);
-}
-
-.btn {
-    display: inline-block;
-    padding: var(--spacing-sm) var(--spacing-lg);
-    text-decoration: none;
-    border-radius: 50px;
+h2 {
+    font-size: 1.7rem;
     font-weight: 600;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-.btn-primary {
-    background-color: var(--color-accent);
-    color: white;
-    border: 2px solid var(--color-accent);
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
-.btn-primary:hover {
-    background-color: transparent;
-    color: var(--color-accent);
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
-.btn-secondary {
-    background-color: transparent;
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
-}
-
-.btn-secondary:hover {
-    background-color: var(--color-accent);
-    color: white;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .hero-text h2 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    .research-highlights {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-group {
-        flex-direction: column;
-        align-items: center;
-    }
-}/* Team Page Styles */
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.team-member-card {
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    padding: var(--spacing-lg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.member-info h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-    font-size: 1.25rem;
-}
-
-.member-info h4 {
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-md);
-    font-weight: 500;
-}
-
-.member-info p {
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-lg);
+/* Body Text */
+p {
+    font-size: 1.1rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-.member-links {
-    display: flex;
-    gap: var(--spacing-md);
-}
-
-.member-links a {
-    text-decoration: none;
-    color: var(--color-primary);
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.member-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-accent);
-    transition: width 0.3s ease;
-}
-
-.member-links a:hover {
-    color: var(--color-accent);
-}
-
-.member-links a:hover::after {
-    width: 100%;
-}
-
-/* Rest of the existing styles remain the same *//* Team Page Enhanced Styles */
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.team-member-card {
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.member-photo {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-}
-
-.member-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.member-info {
-    padding: var(--spacing-md);
-}
-
-.member-info h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-    font-size: 1.25rem;
-}
-
-.member-info h4 {
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-sm);
+/* Navigation */
+.nav-links a {
+    font-family: var(--font-body);
+    font-size: 1rem;
     font-weight: 500;
 }
 
-.member-info p {
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-md);
-    line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.project-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.member-links {
-    display: flex;
-    gap: var(--spacing-md);
+/* Cards and Sections */
+.feature-card h3,
+.method-card h3,
+.team-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
 }
 
-.member-links a {
-    text-decoration: none;
-    color: var(--color-primary);
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.member-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-accent);
-    transition: width 0.3s ease;
-}
-
-.member-links a:hover {
-    color: var(--color-accent);
-}
-
-.member-links a:hover::after {
-    width: 100%;
-}
-
-/* Rest of the existing styles remain the same *//* Team Page Enhanced Styles */
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.team-member-card {
-    display: flex;
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.member-photo {
-    flex: 0 0 250px;
-}
-
-.member-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.member-info {
-    padding: var(--spacing-md);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.member-info h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-    font-size: 1.25rem;
-}
-
-.member-info h4 {
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-sm);
-    font-weight: 500;
-}
-
-.member-info p {
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-md);
-    line-height: 1.6;
-}
-
-.member-links {
-    display: flex;
-    gap: var(--spacing-md);
-}
-
-.member-links a {
-    text-decoration: none;
-    color: var(--color-primary);
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.member-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-accent);
-    transition: width 0.3s ease;
-}
-
-.member-links a:hover {
-    color: var(--color-accent);
-}
-
-.member-links a:hover::after {
-    width: 100%;
-}
-
-/* Collaborators Styles */
-.collaborators {
-    margin-top: calc(var(--spacing-lg) * 2);
-    text-align: center;
-}
-
-.collaborator-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-}
-
-.collaborator {
-    color: var(--color-text-light);
+.feature-card p,
+.method-card p,
+.team-card p {
+    font-family: var(--font-body);
     font-size: 1rem;
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .team-member-card {
-        flex-direction: column;
-    }
-
-    .member-photo {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .collaborator-logos {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* Existing styles remain the same, adding new styles below */
-
-/* Page Header Styles */
-.page-header {
-    text-align: center;
-    margin-bottom: var(--spacing-lg);
-}
-
-.page-header h2 {
+/* Stats */
+.stat-number {
+    font-family: var(--font-heading);
     font-size: 2rem;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
+    font-weight: 700;
 }
 
-.page-header p {
-    color: var(--color-text-light);
-    max-width: 700px;
-    margin: 0 auto;
+.stat-label {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Research Page Styles */
-.research-overview {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.research-card {
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    padding: var(--spacing-lg);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.research-card h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
-}
-
-.research-card ul {
-    list-style-type: disc;
-    padding-left: var(--spacing-lg);
-    color: var(--color-text-light);
-}
-
-/* Team Page Styles */
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.team-card {
+/* Section Headers */
+.page-header h1,
+.section-header h2 {
     text-align: center;
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    padding: var(--spacing-lg);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
 }
 
-.team-member-photo.placeholder {
-    width: 200px;
-    height: 200px;
-    background-color: #e0e0e0;
-    border-radius: 50%;
-    margin: 0 auto var(--spacing-md);
-}
-
-.team-card h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-}
-
-.team-card p {
-    color: var(--color-text-light);
-}
-
-.collaborators {
-    margin-top: var(--spacing-lg);
+.page-header p,
+.section-header p {
     text-align: center;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    max-width: 800px;
+    margin: 0 auto 2rem;
 }
 
-.collaborator-logos {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-md);
+/* Buttons and Links */
+.btn,
+.primary-button,
+.assessment-button {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.collaborator-logo.placeholder {
-    width: 150px;
-    height: 80px;
-    background-color: #e0e0e0;
-    border-radius: var(--border-radius);
+/* Footer */
+footer p {
+    font-size: 0.9rem;
 }
 
-/* Questionnaire Page Styles */
-.questionnaire-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-lg);
-}
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 
-.questionnaire-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
+    h2 {
+        font-size: 2rem;
+    }
 
-.form-section {
-    margin-bottom: var(--spacing-lg);
-}
+    h3 {
+        font-size: 1.5rem;
+    }
 
-.form-group {
-    margin-bottom: var(--spacing-md);
-}
+    p {
+        font-size: 1rem;
+    }
 
-.form-group label {
-    display: block;
-    margin-bottom: var(--spacing-sm);
-    color: var(--color-primary);
-}
-
-.form-group select {
-    width: 100%;
-    padding: var(--spacing-sm);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-    font-family: 'Inter', sans-serif;
-}
-
-/* Active Navigation State */
-nav a.active {
-    color: var(--color-accent);
-    font-weight: 600;
-}
-
-/* Responsive Adjustments for New Sections */
-@media screen and (max-width: 768px) {
-    .questionnaire-intro,
-    .research-overview {
-        grid-template-columns: 1fr;
+    .stat-number {
+        font-size: 1.5rem;
     }
 }
-/* Reset and Base Styles */
-:root {
-    --color-primary: #2c3e50;
-    --color-accent: #3498db;
-    --color-background: #ffffff;
-    --color-text: #333333;
-    --color-text-light: #6c757d;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --border-radius: 8px;
-    --transition-speed: 0.3s;
-}
+
+
 
 * {
     margin: 0;
@@ -592,177 +163,259 @@ nav a.active {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-background);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
+.main-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/landing.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    padding: 1rem;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
-}
-
-/* Header Styles */
-header {
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-lg) 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .branding {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .logo {
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 
 .project-title {
-    font-size: 1.25rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-primary);
 }
 
 nav {
     display: flex;
-    gap: var(--spacing-md);
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--color-text-light);
+    color: var(--color-text);
     font-weight: 500;
-    transition: color var(--transition-speed) ease;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.assessment-button {
+    background: var(--color-primary);
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.assessment-button:hover {
+    background: #3a1070;
 }
 
 /* Hero Section */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 250px);
-    text-align: center;
+    padding: 4rem 1rem;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+.hero-text {
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
     color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
-    font-weight: 700;
 }
 
 .hero p {
-    font-size: 1.125rem;
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.8;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.cta-group {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-md);
+/* Feature Cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;  /* reduced from 1.5rem */
+    margin: 2rem 0;  /* reduced from 3rem */
 }
 
-.btn {
-    display: inline-block;
-    padding: var(--spacing-sm) var(--spacing-md);
-    text-decoration: none;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    transition: all var(--transition-speed) ease;
-}
-
-.btn-primary {
-    background-color: var(--color-accent);
-    color: white;
-    border: 2px solid var(--color-accent);
-}
-
-.btn-primary:hover {
-    background-color: transparent;
-    color: var(--color-accent);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
-}
-
-.btn-secondary:hover {
-    background-color: var(--color-accent);
-    color: white;
-}
-
-/* Footer Styles */
-footer {
+.feature-card {
+    background: white;
+    padding: 1rem;  /* reduced from 1.5rem */
+    border-radius: 8px;  /* reduced from 10px */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);  /* reduced shadow */
     text-align: center;
-    padding: var(--spacing-lg) 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: none;  /* removed hover effect */
+}
+
+.feature-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;  /* reduced from 1.5rem */
+    margin-bottom: 0.5rem;  /* reduced from 1rem */
+    color: var(--color-primary);
+}
+
+.feature-card p {
+    font-size: 0.9rem;  /* reduced from 1rem */
+    margin-bottom: 0;
+    color: var(--color-text);
+}
+
+/* Stats Section */
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;  /* reduced from 1rem */
+    margin: 1.5rem 0;  /* reduced from 2rem */
+}
+
+.stat-card {
+    background: white;
+    padding: 0.75rem;  /* reduced from 1rem */
+    border-radius: 6px;  /* reduced from 8px */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);  /* reduced shadow */
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;  /* reduced from 2rem */
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.15rem;  /* reduced from 0.25rem */
+}
+
+.stat-label {
+    font-size: 0.75rem;  /* reduced from 0.8rem */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Buttons */
+.primary-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+    background: #3a1070;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 1rem;
+    background: #f5f5f5;
+    text-align: center;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: 0.5rem;
 }
 
 .nsf-logo {
-    max-height: 50px;
-    margin-bottom: var(--spacing-sm);
+    height: 50px;
+    width: auto;
+    margin-bottom: 0.5rem;
 }
 
-.footer-content p {
-    color: var(--color-text-light);
-    font-size: 0.9rem;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    header {
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
         flex-direction: column;
-        gap: var(--spacing-md);
+        gap: 1rem;
     }
 
     nav {
         flex-direction: column;
-        align-items: center;
     }
 
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .cta-group {
+    .nav-links {
         flex-direction: column;
         align-items: center;
     }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .feature-grid,
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
+/* Animation Classes */
 body {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
@@ -772,60 +425,749 @@ body.fade-out {
     opacity: 0;
 }
 
+/* Research Flow Diagram Styles */
+.research-flow {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
 
-/* Get Involved Page Styles */
-.involvement-card {
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    padding: var(--spacing-lg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+.research-factors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.factor-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.factor-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.factor-card p {
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.flow-lines {
+    position: relative;
+    height: 100px;
+    margin: -1rem 0;
+}
+
+.flow-line {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 2;
+    stroke-dasharray: 4;
+    opacity: 0.5;
+}
+
+.central-concept {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.concept-card {
+    background: var(--color-primary);
+    color: white;  /* This ensures the text is white */
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.concept-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: white;  /* Explicitly set h2 to white */
+}
+
+.concept-card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.8);  /* Slightly transparent white for the paragraph */
+}
+
+/* Methodology Section */
+.methodology {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.methodology h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.methodology > p {
+    margin-bottom: 2rem;
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.method-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.method-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .research-factors,
+    .methodology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-lines {
+        display: none;
+    }
+
+    .concept-card {
+        margin-top: 2rem;
+    }
+}
+
+
+/* Research floating menu */
+.research-content {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+.floating-nav {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    width: 250px;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.floating-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.floating-nav .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.floating-nav .nav-link:hover {
+    background: rgba(74, 20, 140, 0.1);
+    color: var(--color-primary);
+}
+
+.floating-nav .nav-link.active {
+    background: var(--color-primary);
+    color: white;
+}
+
+.research-sections {
+    flex: 1;
+    max-width: 900px;
+}
+
+.research-section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .research-content {
+        flex-direction: column;
+    }
+
+    .floating-nav {
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Section Divider for Research */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+    margin: 4rem 0;
+    opacity: 0.3;
+}
+
+/* Publications Styles */
+.publications-list {
+    margin-top: 2rem;
+}
+
+.publication-item {
+    margin-bottom: 2rem;
+}
+
+.publication-item h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.publication-entry {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid rgba(74, 20, 140, 0.2);
+}
+
+.publication-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.publication-authors {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.publication-journal {
+    color: var(--color-primary);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Presentations Styles */
+.presentations-list {
+    margin-top: 2rem;
+}
+
+.presentation-item {
+    margin-bottom: 2rem;
+}
+
+.presentation-item h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.presentation-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.presentation-item li {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid rgba(74, 20, 140, 0.2);
+}
+
+.presentation-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.presentation-details {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Team Page Style */
+.team-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.principal-investigator {
+    margin-bottom: 3rem;
+}
+
+.pi-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.pi-profile img {
+    width: 250px;  /* Set a specific width */
+    height: 250px; /* Make it a square by setting equal width and height */
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+    object-position: center; /* Ensures the image is centered */
+}
+
+.pi-details {
+    flex: 1;
+}
+
+.pi-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pi-links .btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.lab-members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card {
+    perspective: 1000px;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}
+
+.team-card-front,
+.team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensure cards have equal height */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: white;
 }
 
-.card-content {
-    flex-grow: 1; /* Allow content to grow and push button to bottom */
+.team-card-front {
+    z-index: 2;
 }
 
-.card-footer {
-    margin-top: auto; /* Push footer to bottom */
-    text-align: center; /* Center the button */
-    padding-top: var(--spacing-md);
+.team-card-back {
+    transform: rotateY(180deg);
+    background-color: var(--color-background, #f5f5f5);
 }
 
-.involvement-card .btn {
-    display: inline-block;
+.team-card-front h2 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
 }
 
+.team-card-front h3 {
+    font-size: 1rem;
+    color: #666;
+}
 
-/* Questionnaire Page Styles */
-.questionnaire-options {
+.team-card-back h2 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.team-card-back h3 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.team-card-back p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.collaborators-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 2rem;
 }
 
-.questionnaire-card {
-    background-color: #f9f9f9;
-    border-radius: var(--border-radius);
-    padding: var(--spacing-lg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+.collaborator-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1200px) {
+    .lab-members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .collaborators-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .lab-members-grid,
+    .collaborators-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .lab-members-grid,
+    .collaborators-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Icons with socials */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(74, 20, 140, 0.1);
+}
+
+.social-link:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Get Involved Page Styles */
+.get-involved-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.involvement-section {
+    margin-bottom: 3rem;
+}
+
+.involvement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.involvement-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.involvement-card:hover {
+    transform: translateY(-5px);
+}
+
+.involvement-card-content {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.questionnaire-card h3 {
+.involvement-card h2 {
+    font-family: var(--font-heading);
     color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.questionnaire-card p {
-    flex-grow: 1;
-    margin-bottom: var(--spacing-md);
+.involvement-card p {
+    font-family: var(--font-body);
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-size: 1.1rem;
 }
 
-.questionnaire-card .btn {
-    align-self: center;
+.involvement-benefits h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.involvement-benefits ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.involvement-benefits li {
+    font-family: var(--font-body);
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.primary-button {
+    align-self: flex-start;
+    margin-top: auto;
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.research-impact {
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.research-impact h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.research-impact p {
+    font-family: var(--font-body);
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-text);
+    font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .involvement-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Questionnaire Cards Styles */
+.questionnaire-cards {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.questionnaire-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.questionnaire-card {
+    perspective: 1000px;
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.questionnaire-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.questionnaire-card:hover .questionnaire-card-inner {
+    transform: rotateY(180deg);
+}
+
+.questionnaire-card-front,
+.questionnaire-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    background-color: var(--color-primary); /* Purple background using primary color variable */
+    color: white;
+}
+
+.questionnaire-card-back {
+    transform: rotateY(180deg);
+    background-color: var(--color-primary); /* Same purple for back side */
+}
+
+.questionnaire-card-front h2,
+.questionnaire-card-back h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.questionnaire-card-front p,
+.questionnaire-card-back p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.questionnaire-card-front .time-estimate {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.questionnaire-card-back h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.questionnaire-card-back p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.questionnaire-card-back ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.questionnaire-card-back li {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+/* Ensure any other text elements in the cards are white */
+.questionnaire-card-front *,
+.questionnaire-card-back * {
+    color: white;
+}
+
+/* Add these styles to the Questionnaire Cards Styles section */
+
+.questionnaire-card .primary-button {
+    background-color: #FFD700; /* Gold color */
+    color: #000000; /* Black text for better contrast on gold */
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+
+.questionnaire-card .primary-button:hover {
+    background-color: #FFC700; /* Slightly darker gold on hover */
+    transform: translateY(-2px);
+}
+
+
+/* Responsive Design for Questionnaire Cards */
+@media (max-width: 1200px) {
+    .questionnaire-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .questionnaire-grid {
+        grid-template-columns: 1fr;
+    }
 }

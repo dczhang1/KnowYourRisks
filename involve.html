@@ -4,65 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Involved | Know Your Risks</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
         <header>
-            <div class="branding">
-                <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
-                <h1 class="project-title">Know Your Risks</h1>
+            <div class="nav-container">
+                <div class="branding">
+                    <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
+                    <span class="project-title">Know Your Risks</span>
+                </div>
+                <nav>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="research.html">Research</a>
+                        <a href="team.html">Team</a>
+                        <a href="involve.html" aria-current="page">Get Involved</a>
+                    </div>
+                    <a href="questionnaire.html" class="assessment-button">Take our Assessments</a>
+                </nav>
             </div>
-            <nav aria-label="Main Navigation">
-                <a href="index.html">Home</a>
-                <a href="questionnaire.html">Take our Questionnaire</a>
-                <a href="research.html">Research</a>
-                <a href="team.html">Team</a>
-                <a href="involve.html" aria-current="page">Get Involved</a>
-            </nav>
         </header>
 
-        <main class="involve-page">
+        <main class="get-involved-page">
             <section class="page-header">
-                <h2>Get Involved</h2>
-                <p>Join our groundbreaking research on workplace risk-taking behaviors</p>
+                <h1>Get Involved</h1>
+                <p>Join our groundbreaking research on workplace risk-taking behaviors and contribute to understanding organizational dynamics.</p>
             </section>
 
-            <section class="involvement-options">
-                <div class="involvement-card">
-                    <div class="card-content">
-                        <h3>For Managers and Leaders</h3>
-                        <p>We're seeking forward-thinking managers and organizational leaders interested in collaborating on site-specific studies. By participating, you'll gain:</p>
-                        <ul>
-                            <li>A comprehensive, free report on risk-taking behaviors within your organization</li>
-                            <li>In-depth analysis of your company's risk profile compared to industry standards</li>
-                            <li>Tailored consulting sessions to interpret results and develop strategies</li>
-                            <li>Insights to enhance decision-making processes and risk management</li>
-                        </ul>
-                        <p>This is a unique opportunity to gain valuable insights into your organization's risk landscape at no cost, while contributing to cutting-edge research in workplace psychology.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Apply for Organizational Study</a>
-                    </div>
-                </div>
+            <section class="involvement-section">
+                <div class="involvement-grid">
+                    <div class="involvement-card managers-card">
+                        <div class="involvement-card-content">
+                            <h2>For Managers and Leaders</h2>
+                            <p>We're seeking forward-thinking managers and organizational leaders interested in collaborating on site-specific studies to gain deep insights into workplace risk behaviors.</p>
+                            
+                            <div class="involvement-benefits">
+                                <h3>What You'll Receive</h3>
+                                <ul>
+                                    <li>Comprehensive risk behavior report</li>
+                                    <li>In-depth analysis compared to industry standards</li>
+                                    <li>Tailored consulting sessions</li>
+                                    <li>Strategic decision-making insights</li>
+                                </ul>
+                            </div>
 
-                <div class="involvement-card">
-                    <div class="card-content">
-                        <h3>For Individual Participants</h3>
-                        <p>Are you a full-time employee interested in understanding your own risk-taking behaviors? Join our paid study and:</p>
-                        <ul>
-                            <li>Receive compensation for your participation</li>
-                            <li>Gain personalized insights into your risk-taking profile</li>
-                            <li>Contribute to groundbreaking research in workplace psychology</li>
-                            <li>Potentially inform future workplace policies and practices</li>
-                        </ul>
-                        <p>Your participation is crucial in helping us understand risk-taking behaviors across various industries and roles. Plus, you'll be compensated for your time and valuable input.</p>
+                            <a href="#" class="primary-button">Apply for Organizational Study</a>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a href="questionnaire.html" class="btn btn-primary">Join Paid Study</a>
+
+                    <div class="involvement-card participants-card">
+                        <div class="involvement-card-content">
+                            <h2>For Individual Participants</h2>
+                            <p>Are you a full-time employee interested in understanding your own risk-taking behaviors and contributing to cutting-edge research?</p>
+                            
+                            <div class="involvement-benefits">
+                                <h3>Study Highlights</h3>
+                                <ul>
+                                    <li>Competitive compensation</li>
+                                    <li>Personalized risk-taking insights</li>
+                                    <li>Contribute to groundbreaking research</li>
+                                    <li>Help shape future workplace practices</li>
+                                </ul>
+                            </div>
+
+                            <a href="questionnaire.html" class="primary-button">Join Paid Study</a>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="research-impact">
+                <h2>Your Impact Matters</h2>
+                <p>By participating in our research, you're not just answering questions—you're helping organizations understand and manage workplace risk more effectively. Your insights contribute to creating safer, more strategic work environments.</p>
             </section>
         </main>
 
@@ -74,10 +89,5 @@
             </div>
         </footer>
     </div>
-
-    <script src="main.js"></script>
-    <script>
-        document.body.classList.remove('fade-out');
-    </script>
 </body>
 </html>

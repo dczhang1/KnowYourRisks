@@ -3,49 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionnaire | Know Your Risks</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Risk Assessments | Know Your Risks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
         <header>
-            <div class="branding">
-                <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
-                <h1 class="project-title">Know Your Risks</h1>
+            <div class="nav-container">
+                <div class="branding">
+                    <img src="assets/logo.png" alt="Research Lab Logo" class="logo">
+                    <span class="project-title">Know Your Risks</span>
+                </div>
+                <nav>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="research.html">Research</a>
+                        <a href="team.html">Team</a>
+                        <a href="involve.html">Get Involved</a>
+                    </div>
+                    <a href="questionnaire.html" class="assessment-button" aria-current="page">Take our Assessments</a>
+                </nav>
             </div>
-            <nav aria-label="Main Navigation">
-                <a href="index.html">Home</a>
-                <a href="questionnaire.html" aria-current="page">Take our Questionnaire</a>
-                <a href="research.html">Research</a>
-                <a href="team.html">Team</a>
-                <a href="involve.html">Get Involved</a>
-            </nav>
         </header>
 
-        <main class="questionnaire-page">
+        <main>
             <section class="page-header">
-                <h2>Risk Assessment Questionnaires</h2>
+                <h1>Risk Assessment Questionnaires</h1>
                 <p>Choose a questionnaire to assess your risk-taking profile</p>
             </section>
 
-            <section class="questionnaire-options">
-                <div class="questionnaire-card">
-                    <h3>General Risk Propensity Scale (GRiPS)</h3>
-                    <p>Measures your overall tendency to take risks across various domains of life.</p>
-                    <a href="grips-questionnaire.html" class="btn btn-primary">START</a>
-                </div>
+            <section class="questionnaire-cards">
+                <div class="questionnaire-grid">
+                    <div class="questionnaire-card">
+                        <div class="questionnaire-card-inner">
+                            <div class="questionnaire-card-front">
+                                <h2>General Risk Propensity Scale (GRiPS)</h2>
+                                <p>Measures your overall tendency to take risks across various domains of life.</p>
+                                <p class="time-estimate">Time: 10-15 minutes</p>
+                            </div>
+                            <div class="questionnaire-card-back">
+                                <h2>GRiPS Details</h2>
+                                <p>This comprehensive assessment explores your risk-taking tendencies across multiple life domains, including:</p>
+                                <ul>
+                                    <li>Financial decisions</li>
+                                    <li>Personal relationships</li>
+                                    <li>Career choices</li>
+                                    <li>Leisure activities</li>
+                                </ul>
+                                <a href="grips-questionnaire.html" class="primary-button">Start Assessment</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="questionnaire-card">
-                    <h3>Calculated and Spontaneous Risk Taking Scale (CASPRT)</h3>
-                    <p>Assesses your approach to risk-taking, differentiating between calculated and spontaneous risks.</p>
-                    <a href="casprt-questionnaire.html" class="btn btn-primary">START</a>
-                </div>
+                    <div class="questionnaire-card">
+                        <div class="questionnaire-card-inner">
+                            <div class="questionnaire-card-front">
+                                <h2>Calculated and Spontaneous Risk Taking Scale (CASPRT)</h2>
+                                <p>Assesses your approach to risk-taking, differentiating between calculated and spontaneous risks.</p>
+                                <p class="time-estimate">Time: 15-20 minutes</p>
+                            </div>
+                            <div class="questionnaire-card-back">
+                                <h2>CASPRT Details</h2>
+                                <p>This unique assessment distinguishes between:</p>
+                                <ul>
+                                    <li>Calculated, strategic risks</li>
+                                    <li>Impulsive, spontaneous risks</li>
+                                    <li>Decision-making patterns</li>
+                                    <li>Risk perception</li>
+                                </ul>
+                                <a href="casprt-questionnaire.html" class="primary-button">Start Assessment</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="questionnaire-card">
-                    <h3>Everyday Risky Choice at Work Inventory (ERIK)</h3>
-                    <p>Evaluates your risk-taking behavior specifically in workplace scenarios.</p>
-                    <a href="erik-questionnaire.html" class="btn btn-primary">START</a>
+                    <div class="questionnaire-card">
+                        <div class="questionnaire-card-inner">
+                            <div class="questionnaire-card-front">
+                                <h2>Everyday Risky Choice at Work Inventory (ERIK)</h2>
+                                <p>Evaluates your risk-taking behavior specifically in workplace scenarios.</p>
+                                <p class="time-estimate">Time: 20-25 minutes</p>
+                            </div>
+                            <div class="questionnaire-card-back">
+                                <h2>ERIK Details</h2>
+                                <p>A targeted assessment focusing on workplace risk behaviors, including:</p>
+                                <ul>
+                                    <li>Decision-making under pressure</li>
+                                    <li>Professional risk tolerance</li>
+                                    <li>Organizational risk perception</li>
+                                    <li>Strategic vs. reactive choices</li>
+                                </ul>
+                                <a href="erik-questionnaire.html" class="primary-button">Start Assessment</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -58,10 +109,5 @@
             </div>
         </footer>
     </div>
-
-    <script src="main.js"></script>
-    <script>
-        document.body.classList.remove('fade-out');
-    </script>
 </body>
 </html>
